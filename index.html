@@ -27,6 +27,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="js/theme.js"></script>
     <link rel="stylesheet" href="css/main.css">
 
     <script type="application/ld+json">
@@ -49,7 +50,7 @@
     }
     </script>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50 text-slate-900 transition-colors duration-200 dark:bg-slate-950 dark:text-slate-100">
 
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -58,25 +59,40 @@
             <div class="relative mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
                 <a href="#home" class="flex items-center gap-3">
                     <img src="assets/images/logo.png" alt="KRISHH APPS SOLUTIONS logo" width="40" height="40" class="h-10 w-10 rounded-lg">
-                    <span class="text-lg font-bold tracking-tight text-brand-navy">Krishh Apps Solutions</span>
+                    <span class="text-lg font-bold tracking-tight text-brand-navy dark:text-slate-100">Krishh Apps Solutions</span>
                 </a>
 
-                <button id="nav-toggle"
-                        type="button"
-                        class="rounded-lg p-2 text-brand-navy hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-teal md:hidden"
-                        aria-expanded="false"
-                        aria-controls="nav-menu"
-                        aria-label="Toggle navigation menu">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+                <div class="flex items-center gap-2">
+                    <button id="theme-toggle"
+                            type="button"
+                            class="theme-toggle"
+                            aria-label="Switch to dark theme"
+                            title="Dark mode">
+                        <svg class="hidden h-5 w-5 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <svg class="h-5 w-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
 
-                <div id="nav-menu" class="absolute right-4 top-full z-50 mt-2 hidden w-52 flex-col gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-lg md:static md:mt-0 md:flex md:w-auto md:flex-row md:items-center md:gap-0 md:space-x-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none">
-                    <a href="#home" class="text-sm font-medium text-slate-600 hover:text-brand-teal">Home</a>
-                    <a href="#apps" class="text-sm font-medium text-slate-600 hover:text-brand-teal">Our Apps</a>
-                    <a href="privacy.html" class="text-sm font-medium text-slate-600 hover:text-brand-teal">Privacy Policy</a>
-                    <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-brand-teal">Contact</a>
+                    <button id="nav-toggle"
+                            type="button"
+                            class="theme-toggle md:hidden"
+                            aria-expanded="false"
+                            aria-controls="nav-menu"
+                            aria-label="Toggle navigation menu">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+
+                    <div id="nav-menu" class="absolute right-4 top-full z-50 mt-2 hidden w-52 flex-col gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-lg dark:border-slate-700 dark:bg-slate-800 md:static md:mt-0 md:flex md:w-auto md:flex-row md:items-center md:gap-0 md:space-x-8 md:border-0 md:bg-transparent md:p-0 md:shadow-none dark:md:bg-transparent">
+                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#apps" class="nav-link">Our Apps</a>
+                        <a href="privacy.html" class="nav-link">Privacy Policy</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -85,16 +101,16 @@
     <main id="main-content">
 
         <section id="home" class="relative overflow-hidden px-4 pb-20 pt-32">
-            <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-brand-teal/5 via-white to-slate-50" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-brand-teal/5 via-white to-slate-50 dark:from-brand-teal/10 dark:via-slate-950 dark:to-slate-950" aria-hidden="true"></div>
             <div class="relative mx-auto max-w-4xl text-center">
                 <img src="assets/images/logo.png" alt="" width="80" height="80" class="mx-auto mb-6 h-20 w-20 rounded-2xl shadow-md" aria-hidden="true">
-                <div class="mb-6 inline-block rounded-full bg-brand-teal/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wide text-brand-teal">
-                    Innovative Mobile Solutions
+                <div class="mb-6 inline-block rounded-full bg-brand-teal/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-wide text-brand-teal dark:bg-brand-teal/20 dark:text-teal-400">
+                    KRISHH APPS SOLUTIONS
                 </div>
-                <h1 class="mb-6 text-4xl font-bold tracking-tight text-brand-navy md:text-6xl">
-                    Crafting experiences that <span class="text-brand-teal">simplify life.</span>
+                <h1 class="mb-6 text-4xl font-bold tracking-tight text-brand-navy dark:text-slate-100 md:text-6xl">
+                    Crafting experiences that <span class="text-brand-teal dark:text-teal-400">simplify life.</span>
                 </h1>
-                <p class="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-slate-600">
+                <p class="body-text mx-auto mb-10 max-w-2xl text-lg leading-relaxed">
                     At <strong>KRISHH APPS SOLUTIONS</strong>, we build utility-driven, user-centric Android applications designed for the modern world — from Indore, India.
                 </p>
                 <div class="flex flex-col justify-center gap-4 sm:flex-row">
@@ -104,16 +120,16 @@
             </div>
         </section>
 
-        <section id="apps" class="bg-white py-20">
+        <section id="apps" class="bg-white py-20 dark:bg-slate-900">
             <div class="mx-auto max-w-6xl px-4">
                 <div class="mb-16 text-center">
                     <h2 class="section-heading mb-4">Our Featured Apps</h2>
-                    <p class="mx-auto max-w-2xl text-slate-600">A selection of our most popular utilities on Google Play.</p>
+                    <p class="body-text mx-auto max-w-2xl">A selection of our most popular utilities on Google Play.</p>
                     <div class="mx-auto mt-4 h-1 w-20 bg-brand-teal"></div>
                 </div>
 
                 <div id="apps-grid" class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-                    <div class="col-span-full py-8 text-center text-slate-500">Loading apps…</div>
+                    <div class="col-span-full py-8 text-center muted-text">Loading apps…</div>
                 </div>
 
                 <div class="mt-12 rounded-2xl bg-gradient-to-r from-brand-navy to-brand-teal p-8 text-center text-white shadow-lg md:p-10">
@@ -122,7 +138,7 @@
                         Discover all published apps by KRISHH APPS SOLUTIONS — scanners, organizers, weather tools, and more.
                     </p>
                     <a href="https://play.google.com/store/apps/developer?id=KRISHH+APPS+SOLUTIONS&hl=en"
-                       class="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3 font-semibold text-brand-navy transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-teal"
+                       class="inline-flex items-center justify-center rounded-lg bg-white px-8 py-3 font-semibold text-brand-navy transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-brand-teal dark:bg-slate-100 dark:hover:bg-white"
                        target="_blank"
                        rel="noopener noreferrer">
                         View All Apps on Google Play
@@ -132,46 +148,46 @@
             </div>
         </section>
 
-        <section id="privacy" class="bg-slate-50 py-20">
+        <section id="privacy" class="bg-slate-50 py-20 dark:bg-slate-950">
             <div class="mx-auto max-w-4xl px-4">
-                <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+                <div class="surface-card p-8">
                     <h2 class="section-heading mb-4">Privacy Policy</h2>
-                    <p class="mb-4 text-sm italic text-slate-500">Effective Date: April 2026</p>
-                    <p class="mb-6 leading-relaxed text-slate-600">
+                    <p class="mb-4 text-sm italic muted-text">Effective Date: April 2026</p>
+                    <p class="body-text mb-6 leading-relaxed">
                         KRISHH APPS SOLUTIONS is committed to protecting your privacy. Our apps may collect device, usage, analytics, and advertising data to improve performance and deliver relevant experiences. We do not knowingly collect data from children under 13.
                     </p>
-                    <a href="privacy.html" class="inline-flex items-center font-semibold text-brand-teal hover:underline focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2">
+                    <a href="privacy.html" class="inline-flex items-center font-semibold text-brand-teal hover:underline focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2 dark:text-teal-400 dark:focus:ring-offset-slate-900">
                         Read Full Privacy Policy &rarr;
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="bg-white py-20">
+        <section id="contact" class="bg-white py-20 dark:bg-slate-900">
             <div class="mx-auto max-w-xl px-4 text-center">
                 <h2 class="section-heading mb-4">Get Support</h2>
-                <p class="mb-8 text-slate-600">Have questions or feedback? Our team is here to help you.</p>
+                <p class="body-text mb-8">Have questions or feedback? Our team is here to help you.</p>
 
                 <div class="space-y-4">
-                    <div class="flex items-center justify-center space-x-3 text-slate-700">
+                    <div class="flex items-center justify-center space-x-3 text-slate-700 dark:text-slate-300">
                         <svg class="h-5 w-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
-                        <a href="mailto:satish.vishwakarma.it@gmail.com" class="font-medium hover:text-brand-teal">satish.vishwakarma.it@gmail.com</a>
+                        <a href="mailto:satish.vishwakarma.it@gmail.com" class="font-medium hover:text-brand-teal dark:hover:text-teal-400">satish.vishwakarma.it@gmail.com</a>
                     </div>
-                    <div class="flex items-center justify-center space-x-3 text-slate-700">
+                    <div class="flex items-center justify-center space-x-3 text-slate-700 dark:text-slate-300">
                         <svg class="h-5 w-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
                         <span class="font-medium">Indore, Madhya Pradesh, India</span>
                     </div>
-                    <div class="flex items-center justify-center space-x-3 text-slate-700">
+                    <div class="flex items-center justify-center space-x-3 text-slate-700 dark:text-slate-300">
                         <svg class="h-5 w-5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                         </svg>
                         <a href="https://play.google.com/store/apps/developer?id=KRISHH+APPS+SOLUTIONS&hl=en"
-                           class="font-medium hover:text-brand-teal"
+                           class="font-medium hover:text-brand-teal dark:hover:text-teal-400"
                            target="_blank"
                            rel="noopener noreferrer">
                             Google Play Developer Page
@@ -184,7 +200,7 @@
 
     </main>
 
-    <footer class="border-t border-slate-800 bg-brand-navy py-10 text-center text-sm text-slate-400">
+    <footer class="border-t border-slate-800 bg-brand-navy py-10 text-center text-sm text-slate-400 dark:border-slate-700 dark:bg-slate-950">
         <div class="mx-auto max-w-6xl px-4">
             <div class="mb-4 flex flex-col items-center gap-3">
                 <img src="assets/images/logo.png" alt="KRISHH APPS SOLUTIONS" width="48" height="48" class="h-12 w-12 rounded-lg">
@@ -203,7 +219,7 @@
                 </a>
             </nav>
             <p>&copy; 2026 KRISHH APPS SOLUTIONS. All rights reserved.</p>
-            <p class="mt-2 text-slate-500">Developed with focus on performance and usability.</p>
+            <p class="mt-2 text-slate-500 dark:text-slate-600">Developed with focus on performance and usability.</p>
         </div>
     </footer>
 

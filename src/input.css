@@ -5,6 +5,11 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -24,7 +29,7 @@
 
 @layer components {
   .glass {
-    @apply bg-white/90 backdrop-blur-md;
+    @apply border-slate-200 bg-white/90 backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/90;
   }
 
   .app-card {
@@ -36,18 +41,38 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-lg bg-brand-teal px-8 py-3 font-semibold text-white transition hover:bg-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2;
+    @apply inline-flex items-center justify-center rounded-lg bg-brand-teal px-8 py-3 font-semibold text-white transition hover:bg-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2 dark:hover:bg-brand-teal/80 dark:focus:ring-offset-slate-900;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-8 py-3 font-semibold text-slate-700 transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2;
+    @apply inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-8 py-3 font-semibold text-slate-700 transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-teal focus:ring-offset-2 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700 dark:focus:ring-offset-slate-900;
   }
 
   .section-heading {
-    @apply text-3xl font-bold text-brand-navy;
+    @apply text-3xl font-bold text-brand-navy dark:text-slate-100;
   }
 
   .skip-link {
-    @apply sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-brand-navy focus:px-4 focus:py-2 focus:text-white;
+    @apply sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-brand-navy focus:px-4 focus:py-2 focus:text-white dark:focus:bg-brand-teal;
+  }
+
+  .theme-toggle {
+    @apply rounded-lg p-2 text-brand-navy transition hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-teal dark:text-slate-200 dark:hover:bg-slate-800;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium text-slate-600 hover:text-brand-teal dark:text-slate-300 dark:hover:text-brand-teal;
+  }
+
+  .surface-card {
+    @apply rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800;
+  }
+
+  .body-text {
+    @apply text-slate-600 dark:text-slate-400;
+  }
+
+  .muted-text {
+    @apply text-slate-500 dark:text-slate-500;
   }
 }
