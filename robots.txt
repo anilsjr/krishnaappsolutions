@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anilsjr.github.io/krishnaappsolutions/sitemap.xml

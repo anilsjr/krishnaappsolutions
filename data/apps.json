@@ -1,0 +1,37 @@
+{
+  "developerUrl": "https://play.google.com/store/apps/developer?id=KRISHH+APPS+SOLUTIONS&hl=en",
+  "apps": [
+    {
+      "name": "Smart QR & Barcode Scanner",
+      "description": "Fast, reliable QR and barcode scanning with a clean, intuitive interface for everyday use.",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.smarttoolshub.qrscanner",
+      "iconUrl": "https://play-lh.googleusercontent.com/IPk8NDE5QyyeOhcX-iMlcVcIqDn9OgjhwD0iVmxEFMMaCB4nK_dmG-5gQQCFQRiQo8Rjy0jstKrOEZGTjy_pLA=w128-h128-rw",
+      "category": "Utilities",
+      "status": "published"
+    },
+    {
+      "name": "eFile: Offline Docs Organizer",
+      "description": "Organize, store, and manage documents offline with a secure family-friendly file vault.",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.krishhapps.efile.family.document.organizer.offline.vault.filemanager.dockeeper",
+      "iconUrl": "https://play-lh.googleusercontent.com/wgEjR-N_WQIuRs4uKu6ZQjp07VDVDTR1ttuJJUgvII7nythexzRmcI7g8ychSo5N6jwQqimse4EZjv5nnkwgPQ=w128-h128-rw",
+      "category": "Productivity",
+      "status": "published"
+    },
+    {
+      "name": "Aura AI: Mood Tracker",
+      "description": "Track your mood and journal with AI-powered insights to understand emotional patterns over time.",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.auraai.moodtracker.journal",
+      "iconUrl": "https://play-lh.googleusercontent.com/gmxECRx2-VxbnQzzRHxhW8Ipxfs_kQTAu2Xl5BSctRthHkmokZChcitlHdBcR367XRD28lE_o-CIhB5blUcOsU8=w128-h128-rw",
+      "category": "Health & Fitness",
+      "status": "published"
+    },
+    {
+      "name": "Image to PDF: JPG PDF Maker",
+      "description": "Convert photos and images to PDF quickly — ideal for receipts, documents, and sharing.",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.krishhapps.imagetopdf.jpgtopdf.pdfreader.photo.converter.pdfmaker.pngtopdf",
+      "iconUrl": "https://play-lh.googleusercontent.com/ADPcRLpw_UU8clxhuVAh7orFi5omiZgCkGTv-eMKV4xWsDAH_Ge9YrIYW4DVte49_-lOIQrK2_gpoGpHiXwn5w=w128-h128-rw",
+      "category": "Productivity",
+      "status": "published"
+    }
+  ]
+}
